@@ -4,6 +4,11 @@ auto_deploy: false
 admin_path: ''
 webhook_url: 
 sections:
+- type: directory
+  path: content/homepage
+  label: Homepage
+  create: all
+  match: "**/*"
 - type: heading
   label: Content
 - type: directory
@@ -18,11 +23,6 @@ sections:
   label: Pages
   create: all
   match: "*"
-- type: directory
-  path: content/homepage
-  label: Homepage
-  create: all
-  match: "**/*"
 - type: document
   path: config.toml
   label: Site configuration
